@@ -18,6 +18,11 @@ app.use(cors());
 /* Routes */
 app.use("/api/categorias", categoriaRoutes)
 
+app.get('/', (req, res)=>{
+    res.send('REST API EN RENDER WITHOUT DATABASE ENDPOINTS')
+
+})
+
 /* hacemos disponible a mi server app para todaaa la aplicacion */
 export default app; 
 
